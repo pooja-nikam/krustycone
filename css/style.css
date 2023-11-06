@@ -1,0 +1,556 @@
+
+@font-face {
+    src: url(../font/Bellota-Bold.otf);
+    font-family: "Bellota-Bold";
+}
+
+
+@font-face {
+    font-family:"Bellota-Bold";src:url(../fonts/Bellota-Bold.ttf) 
+    format("truetype"),url(../fonts/Bellota-BoldItalic.ttf) 
+    format("truetype"),url(../fonts/Bellota-Italic.ttf)
+}
+
+.navbar a, .about h1, .menu h1, .gallery h1, .testimonials h1, .contact h1{
+  font-family: "Bellota-Bold";
+}
+
+
+.navbar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+  background: #fff;
+}
+
+
+.navbar ul li a {
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.navbar a{
+  color: rgb(63, 4, 4) !important;
+}
+
+.navbar ul li a:hover {
+  background: #e7b96f;
+}
+
+*{
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #eac17a transparent;
+  outline: none;
+  font-family: "Bellota-Bold";
+
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #eac17a;
+    /*border-radius: 3px;*/
+}
+
+
+.main-banner {
+  background: url(../images/banner-img.png);
+  height: 400px;
+  width: 100%;
+}
+
+.img-container img{
+height: 270px;
+width: 500px;
+padding-top: 30px;
+}
+
+.img-container img:hover{
+transform: scale(1.1)
+}
+
+.heading h1{
+text-align: center;
+padding-top: 40px;
+color: rgb(63, 4, 4);
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+.img-container{
+position: relative;
+height: 100%;
+
+}
+
+
+.About .row{
+margin-left: 50px;
+margin-right: 50px;
+}
+.info {
+text-align:justify;
+font-size: 18px;
+padding: 0 30px;
+}
+
+.Menu{
+padding-bottom: 150px;
+}
+
+.menu-list{
+max-height: 260px;
+width: 50%;
+overflow-y:auto;
+padding-left: 20px;
+}
+
+.menu-list ul h5{
+color:brown;
+}
+
+.menu-list ul ul{
+border-bottom: 1px ;
+list-style-type:disc;
+
+}
+
+.menu-list ul li::marker{
+  color: #eac17a;
+  font-size: 1.5em;
+}
+
+.menu-list ul{
+text-align:justify !important;
+scroll-behavior: smooth;
+cursor: pointer;
+
+}
+
+.Reviews{
+height: 500px;
+background:#eac17a;
+}
+
+.card{
+position: relative;
+background-color: #fff;
+background-clip: border-box;
+}
+
+footer::before {
+content: "— ";
+}
+
+hr{
+color: inherit;
+opacity: .25;
+}
+
+.gallery{
+column-count: 4;
+column-gap: 0px;
+padding-top: 30px;
+height: auto;
+}
+
+.gallery img {
+  padding-top: 10px;
+  opacity: 0.5;
+}
+
+.gallery img:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.33);
+}
+.contact{
+background: url('../images/contactus-bg.png') no-repeat;
+background-size:cover;
+margin-top: 50px;
+height: 400px;
+}
+
+.contact .con-heading{
+color: #fff;
+text-align: center;
+padding-top: 50px;
+}
+
+.contact p{
+color: #fff;
+}
+
+.contact .col-1{
+  color: #fff;
+}
+.contact .social li i {
+  text-align: center;
+  padding: 5px;
+}
+
+
+.social li {
+    float: left;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+    background: white;
+    display: inline;
+}
+
+.social li i {
+    font-size: 30px;
+    color: black;
+}
+
+
+.col-md-6 form {
+padding-top: 50px;
+
+}
+
+.contact form{
+font-size: 20px;
+}
+
+.contact input[type=text]{
+height: 40px;
+background: 0 !important;
+border-radius: 0%;
+
+}
+
+.contact ::placeholder{
+color: white;
+}
+
+.contact textarea{
+background-color: transparent !important;
+font-size: 15px;
+border-radius: 0%;
+
+}
+
+.contact input[type=button]{
+background-color: yellow;
+font-size: 15px;
+border-radius: 0%;
+cursor: pointer;
+}
+.navbar-toggler {
+  margin-left: 252px;
+  color: #7a4d05;
+  border-radius: 1;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+
+  .navbar{
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+  }
+  .navbar img{
+    height: 80px !important;
+    
+  }
+
+  
+
+  .navbar-toggler-icon {
+    height: 1em !important;
+    width: 1em !important;
+  }
+  .main-banner{
+    width: 100% !important;
+    height: 250px !important;
+    background-size:cover !important;
+  }
+  
+  .navbar ul li a {
+    margin: 0 25px !important;
+}
+
+.About .row{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.img-container img {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 80% !important;
+  height: 150px !important;
+}
+
+.img-container img:hover {
+  transform: scale(1.1) !important;
+}
+.info{
+  padding: 0 !important;
+}
+.info p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.Menu, .Menu-heading{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.menu-list{
+  width: 100% !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+
+}
+
+.Reviews{
+  padding-bottom: 20px !important;
+  height: auto !important;
+
+}
+
+ .Reviews .heading h1{
+  padding-top: 20px !important;
+  padding-bottom: 0 !important;
+}
+
+.Gallery .heading h1{
+  padding-top: 50px !important;
+}
+
+.gallery{
+  column-count: 2 !important;
+  column-gap: 10px !important;
+}
+.contact {
+  height: auto !important;
+}
+
+.contact ul{
+  padding-left: 0!important ;
+}
+
+.contact input[type=button]{
+  margin-bottom: 30px !important;
+}
+
+.contact input[type=text]{
+  margin-bottom: 10px !important;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .navbar{
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+  }
+  .navbar img{
+    height: 60px !important;
+  }
+  .navbar-toggler{
+    margin: 0 !important;
+  } 
+  .navbar-toggler-icon {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .main-banner{
+    width: 100% !important;
+    height: 180px !important;
+    background-size:cover !important;
+  }
+  
+  .navbar ul li a {
+    margin: 0 25px !important;
+}
+
+.About .row{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.img-container img {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100px !important;
+}
+
+.img-container img:hover {
+  transform: scale(1.5) !important;
+}
+
+
+.info {
+  padding: 0 !important;
+  font-size: 15px !important;
+  
+}
+
+.Menu, .Menu-heading{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.menu-list{
+  width: 100% !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+
+}
+
+.Reviews{
+  padding-bottom: 20px !important;
+  height: auto !important;
+
+}
+
+ .Reviews .heading h1{
+  padding-top: 20px !important;
+  padding-bottom: 0 !important;
+}
+
+.Gallery .heading h1{
+  padding-top: 50px !important;
+}
+
+.gallery{
+  column-count: 2 !important;
+  column-gap: 10px !important;
+}
+.contact {
+  height: auto !important;
+}
+
+.contact ul{
+  padding-left: 0 ;
+}
+
+.contact input[type=button]{
+  margin-bottom: 30px !important;
+}
+
+.contact input[type=text]{
+  margin-bottom: 10px !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+  .navbar{
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+  }
+  .navbar img{
+    height: 100px !important;
+  }
+
+  .navbar-toggler-icon {
+    height: 1.5em !important;
+    width: 1.5em !important;
+  }
+  .navbar-toggler{
+    margin: 10px !important;
+  } 
+  .main-banner{
+    width: 100% !important;
+    height: 400px !important;
+    background-size:cover !important;
+    margin-top: 200px;
+  }
+  
+  .navbar ul li a {
+    margin: 0 25px !important;
+  }
+  .About .row{
+    margin: 0 !important;
+    padding-top: 30px !important;
+  }
+  .img-container img {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 350px !important;
+  }
+
+  
+  .info{
+    padding:0 !important;
+  }
+  .info p{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .Menu, .Menu-heading{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .carousel{
+    padding-top: 30px !important;
+  }
+
+  .carousel img{
+    height: 220px !important;
+  }
+  .menu-list{
+    width: 100% !important;
+    padding-top: 30px !important;
+  }
+
+  .Menu .row{
+    padding-bottom: 50px !important;
+  }
+
+  .Reviews{
+    padding-bottom: 20px !important;
+    height: auto !important;
+
+  }
+
+  .Reviews .heading h1{
+    padding-top: 20px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .Gallery .heading h1{
+    padding-top: 50px !important;
+  }
+
+  .gallery{
+    column-count: 4 !important;
+    column-gap: 10px !important;
+  }
+  .contact {
+    height: auto !important;
+  }
+
+  .contact ul{
+    padding-left: 0 ;
+  }
+
+  .contact input[type=button]{
+    margin-bottom: 30px !important;
+  }
+
+  .contact input[type=text]{
+    margin-bottom: 10px !important;
+  }
+  }
+
